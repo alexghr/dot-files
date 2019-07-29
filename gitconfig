@@ -1,0 +1,27 @@
+[user]
+	email = alexghr@users.noreply.github.com
+	name = Alex Gherghisan
+[alias]
+	st = status --short --branch
+	ax = add --update
+	ct = commit
+	cta = commit --amend
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --branches --remotes --tags
+	ck = checkout
+	get = fetch --all --prune
+	rb  = rebase
+	rbi = rebase --interactive
+	rbc = rebase --continue
+	rba = rebase --abort
+	aa = add --all
+	staged = diff --cached
+	pushf = push --force-with-lease
+	sha = rev-parse HEAD
+	mu = merge --ff-only @{u}
+	ru = rebase --interactive @{u}
+[push]
+	default = current
+[core]
+	editor = vim
+[rerere]
+	enabled = true
