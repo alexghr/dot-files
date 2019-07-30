@@ -3,7 +3,17 @@
 set -o errexit
 set -o nounset
 
-cp ./.gitconfig ~/.gitconfig
-cp ./.tmux.conf ~/.tmux.conf
-cp ./.bash_aliases ~/.bash_aliases
+function copy {
+  # if no explicit destination is given then copy to "~/${src}"
+  default_dst="$HOME/$(basename $1)"
 
+  src="$1"
+  dst="${2:-$default_dst}"
+
+  echo "Copying $src to $dst"
+  cp --reflink=auto "$src" "$dst"
+}
+
+copy .gitconfig
+copy .tmux.conf
+copy .bash_aliases
