@@ -20,5 +20,11 @@ copy .gitconfig
 copy .tmux.conf
 copy .bash_aliases
 
-copy ./vscode/keybindings.json ~/.config/Code/User/
-copy ./vscode/settings.json ~/.config/Code/User/
+if [ -x "$(command -v code)" ]; then
+  copy ./vscode/keybindings.json ~/.config/Code/User/
+  copy ./vscode/settings.json ~/.config/Code/User/
+
+  for plugin in $(cat ./vscode/_plugins.txt); do
+    code --install-extension "$plugin"
+  done
+fi
