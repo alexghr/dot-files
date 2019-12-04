@@ -10,6 +10,8 @@ function copy {
   src="$1"
   dst="${2:-$default_dst}"
 
+  mkdir -p "$dst"
+
   echo "Copying $src to $dst"
   cp --reflink=auto "$src" "$dst"
 }
@@ -17,3 +19,6 @@ function copy {
 copy .gitconfig
 copy .tmux.conf
 copy .bash_aliases
+
+copy ./vscode/keybindings.json ~/.config/Code/User/
+copy ./vscode/settings.json ~/.config/Code/User/

@@ -1,0 +1,22 @@
+[
+  {
+    "key": "alt+shift+o",
+    "command": "workbench.action.showAllSymbols"
+  },
+  {
+    "key": "alt+o",
+    "command": "workbench.action.gotoSymbol"
+  },
+  {
+    "key": "ctrl+shift+f4",
+    "command": "workbench.action.closeWindow"
+  },
+  {
+    "key": "ctrl+f4",
+    "command": "workbench.action.closeActiveEditor"
+  },
+  {
+    "key": "ctrl+\\",
+    "command": "workbench.action.toggleSidebarVisibility"
+  }
+]
