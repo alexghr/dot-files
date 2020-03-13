@@ -5,8 +5,7 @@
   "editor.cursorBlinking": "solid",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontFamily": "'Cascadia Code', 'Fira Code', 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
-  "editor.fontSize": 17,
-  "editor.fontWeight": "400",
+  "editor.fontSize": 16,
   "editor.formatOnSave": true,
   "editor.lineHeight": 25,
   "editor.letterSpacing": 0.5,
@@ -16,14 +15,14 @@
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "files.trimTrailingWhitespace": true,
-  "search.location": "panel",
+  "html.mirrorCursorOnMatchingTag": false,
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false,
   "window.menuBarVisibility": "toggle",
   "window.titleBarStyle": "custom",
   "window.zoomLevel": 0,
-  "workbench.colorTheme": "Cobalt2",
-  "workbench.iconTheme": "vs-nomo-dark",
+  "workbench.colorTheme": "Overnight",
+  "workbench.iconTheme": "vscode-icons",
 
   // plugins
   "cSpell.language": "en,en-GB,en-US",
@@ -31,6 +30,7 @@
     "accum",
     "authn",
     "backend",
+    "bigint",
     "birthdate",
     "bodyparser",
     "component",
@@ -50,7 +50,8 @@
     "typeahead",
     "unmount",
     "unserialize",
-    "upsert"
+    "upsert",
+    "webp"
   ],
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": false,
@@ -74,13 +75,15 @@
   "vim.handleKeys": {
     "<C-d>": true,
     "<C-b>": true,
-    "<C-s>": true,
-    "<C-f>": true
+    "<C-s>": false,
+    "<C-f>": false,
+    "<C-h>": false
   },
   "vim.highlightedyank.enable": true,
   "vim.hlsearch": true,
   "vim.normalModeKeyBindings": [],
   "vim.surround": false,
   "vim.whichwrap": "h,j,k,l",
-  "vsicons.dontShowNewVersionMessage": true
+  "vsicons.dontShowNewVersionMessage": true,
+  "editor.tabSize": 2
 }
