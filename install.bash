@@ -19,6 +19,7 @@ function copy {
 copy .gitconfig
 copy .tmux.conf
 copy .bash_aliases
+copy .bash_ps
 
 if [ -x "$(command -v code)" ]; then
   copy ./vscode/keybindings.json ~/.config/Code/User/
