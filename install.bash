@@ -5,12 +5,12 @@ set -o nounset
 
 function copy {
   # if no explicit destination is given then copy to "~/${src}"
-  default_dst="$HOME/$(basename $1)"
+  default_dst="$HOME"
 
   src="$1"
-  dst="${2:-$default_dst}"
+  dst="${2:-$default_dst}/$(basename $1)"
 
-  mkdir -p "$dst"
+  mkdir -p $(dirname $dst)
 
   echo "Copying $src to $dst"
   cp --reflink=auto "$src" "$dst"
